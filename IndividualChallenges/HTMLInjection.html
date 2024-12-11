@@ -1,0 +1,6 @@
+<!-- Insecure: Embeds an iframe that can point to sensitive operations without validation -->
+<iframe src="http://example.com/transfer?amount=1000"></iframe>
+
+<!-- solve the above vulnerability -->
+ <!-- Use HTTPS and secure query parameters -->
+<iframe src="https://example.com/transfer?amount=1000" sandbox></iframe>
